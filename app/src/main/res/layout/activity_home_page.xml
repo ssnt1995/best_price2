@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/sc">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="15dp"
+
+
+    >
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="15dp"
+            android:background="#fff"
+            ></View>
+
+        <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+
+<ImageView
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:src="@drawable/mobile"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="MOBILE"
+        android:textColor="#fff"
+        android:textSize="40dp"
+
+        android:onClick="mobile"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:id="@+id/mobile"
+        android:layout_margin="15dp"/>
+</LinearLayout>
+
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_margin="15dp"
+        android:background="#fff"
+        ></View>
+
+
+    <LinearLayout
+        android:layout_width="376dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/bike"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="BIKE"
+        android:onClick="bike"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:textColor="#f8fafc"
+        android:layout_below="@id/mobile"
+        android:id="@+id/bike"
+        android:textSize="40dp"
+        android:gravity="center_horizontal"
+        android:backgroundTint="#10efca"
+        android:layout_margin="15dp"
+
+        />
+
+        </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_margin="15dp"
+        android:background="#f9faff"
+        ></View>
+
+
+    <LinearLayout
+        android:layout_width="376dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/car"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="CAR"
+        android:textStyle="bold"
+        android:textColor="#f5f3f1"
+        android:gravity="center_horizontal"
+        android:id="@+id/car"
+        android:onClick="car"
+        android:textSize="40dp"
+        android:layout_below="@id/bike"
+        android:layout_margin="15dp"
+
+        />
+        </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_margin="15dp"
+        android:background="#fff"
+        ></View>
+
+    <LinearLayout
+        android:layout_width="376dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/lappy"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:onClick="laptop"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:text="LAPTOP"
+        android:textColor="#f9f8f5"
+
+        android:id="@+id/laptop"
+        android:layout_below="@id/car"
+        android:textSize="40dp"
+        android:layout_margin="15dp"
+
+        />
+        </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_margin="15dp"
+        android:background="#fff"
+        ></View>
+
+
+    <LinearLayout
+        android:layout_width="376dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tv"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="TELEVISION"
+        android:onClick="television"
+
+        android:textColor="#f8faf6"
+        android:textStyle="bold"
+        android:id="@+id/television"
+        android:textSize="40dp"
+        android:layout_margin="15dp"
+
+        />
+        </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_margin="15dp"
+        android:background="#fff"
+        ></View>
+
+
+    <LinearLayout
+        android:layout_width="376dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/watch"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="WATCHES"
+        android:onClick="watches"
+        android:gravity="center_horizontal"
+        android:textColor="#fff"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:layout_margin="15dp"
+        android:id="@+id/watches"
+
+        />
+        </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_margin="15dp"
+        android:background="#fff"
+        ></View>
+
+    <LinearLayout
+        android:layout_width="376dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/shoe"/>
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="SHOES"
+        android:onClick="shoes"
+        android:gravity="center_horizontal"
+        android:textColor="#fff"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:layout_margin="15dp"
+        android:id="@+id/shoes"
+
+        />
+
+        </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_margin="15dp"
+        android:background="#fff"
+        ></View>
+
+
+    <LinearLayout
+        android:layout_width="376dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/camera"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="CAMERA"
+        android:gravity="center_horizontal"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:id="@+id/camera"
+        android:textSize="40dp"
+        android:onClick="camera"
+        android:layout_margin="15dp"
+
+        />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="15dp"
+            android:background="#fff"
+            ></View>
+
+
+</LinearLayout>
+
+
+</ScrollView>
