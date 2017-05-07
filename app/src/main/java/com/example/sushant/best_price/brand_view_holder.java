@@ -3,6 +3,7 @@ package com.example.sushant.best_price;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 /**
@@ -11,7 +12,9 @@ import android.widget.TextView;
 
 public class brand_view_holder extends RecyclerView.ViewHolder {
 
-    public TextView brand_text,brand_description , established ;
+    public TextView brand_text,brand_description , founded ;
+
+    public LinearLayout brand_cell;
 
     public ImageView brand_image;
 
@@ -22,7 +25,7 @@ public class brand_view_holder extends RecyclerView.ViewHolder {
         brand_text = (TextView) itemView.findViewById(R.id.brand_id);
         brand_description = (TextView) itemView.findViewById(R.id.description);
 
-        established = (TextView) itemView.findViewById(R.id.establishedon);
+        founded = (TextView) itemView.findViewById(R.id.founded);
 
         brand_image = (ImageView) itemView.findViewById(R.id.brand_image);
     }

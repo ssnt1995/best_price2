@@ -43,7 +43,7 @@ public class show_products extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        JsonObjectRequest jobreq = new JsonObjectRequest("http://192.168.0.30/products.php", job, new Response.Listener<JSONObject>() {
+        JsonObjectRequest jobreq = new JsonObjectRequest("http://"+IpAddress.ip+"/products.php", job, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
 

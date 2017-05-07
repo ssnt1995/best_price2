@@ -41,7 +41,7 @@ public class Show_brands extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        JsonObjectRequest jobreq = new JsonObjectRequest("http://192.168.0.25git/brands.php", job, new Response.Listener<JSONObject>() {
+        JsonObjectRequest jobreq = new JsonObjectRequest("http://"+IpAddress.ip+"/brands.php", job, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
 

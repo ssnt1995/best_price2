@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_yellow"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="com.example.sushant.best_price.Compare_mobiles">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/top_bar"
+            android:background="#a70b0b0b">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CLOSE"
+                android:textStyle="bold"
+                android:textColor="#e4e458"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:clickable="true"
+                android:onClick="close"/>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SELECT BIKE"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:layout_marginTop="20dp"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/first_bike_spinner">
+
+        </Spinner>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COMPARES WITH"
+            android:textColor="#1b3176"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SELECT BIKE"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:layout_marginTop="30dp"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/second_bike_spinner">
+
+        </Spinner>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DO COMPARISON"
+        android:background="#1b3176"
+        android:padding="15dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:textColor="#fff"/>
+</RelativeLayout>

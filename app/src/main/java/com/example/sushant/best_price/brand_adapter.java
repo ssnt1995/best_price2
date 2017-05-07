@@ -40,15 +40,17 @@ public class brand_adapter extends RecyclerView.Adapter<brand_view_holder> {
         try {
             final JSONObject job = jarr.getJSONObject(position);
 
-            holder.brand_text.setText(job.getString("name"));
+            holder.brand_text.setText(job.getString("Name"));
             holder.brand_image.setImageBitmap(StringToBitMap(job.getString("image")));
-            holder.established.setText(job.getString("established_on"));
+            holder.founded.setText(job.getString("Founded"));
+            holder.brand_description.setText(job.getString("Brand_details"));
+
             holder.brand_text.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     Intent i = new Intent(a , show_products.class);
                     try {
-                        i.putExtra("brand_id",job.getString("brand_id"));
+                        i.putExtra("brand_id",job.getString("Brand_Id"));
 
                     } catch (JSONException e) {
                         e.printStackTrace();

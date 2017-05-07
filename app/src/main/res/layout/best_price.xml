@@ -16,7 +16,7 @@
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
         android:id="@+id/email"
-        android:hint="EMAIL ADDRESS"
+        android:hint="Email Address"
         android:layout_marginTop="190dp"
         android:textColorHint="#fff"
         android:gravity="center"/>

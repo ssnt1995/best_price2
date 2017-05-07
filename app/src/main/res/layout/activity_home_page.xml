@@ -1,10 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<android.support.v4.widget.DrawerLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/sc">
+    android:id="@+id/drawer_lay"
+    android:background="@drawable/login2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/top_bar"
+        android:background="#a70b0b0b">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MORE"
+            android:textStyle="bold"
+            android:textColor="#e4e458"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:clickable="true"
+            android:onClick="show_more"/>
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_bar">
+
+
 
     <LinearLayout
     android:layout_width="match_parent"
@@ -335,5 +367,215 @@
 
 </LinearLayout>
 
+    </ScrollView>
+    </RelativeLayout>
 
-</ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#e6ecec57"
+        android:layout_gravity="left"
+        android:gravity="center_horizontal">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PROFILE"
+            android:textColor="#000"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:layout_marginTop="100dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#c3ffffff"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COMPARE MOBILES"
+            android:textColor="#000"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:onClick="compare_mobile"
+            android:layout_marginTop="30dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#c3ffffff"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COMPARE LAPTOPS"
+            android:textColor="#000"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#c3ffffff"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COMPARE BIKES"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:onClick="compare_bikes"
+            android:layout_marginTop="30dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#c3ffffff"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COMPARE CARS"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:onClick="compare_bikes"
+                android:layout_marginTop="30dp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#c3ffffff"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COMPARE TELEVISION"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:onClick="compare_bikes"
+                android:layout_marginTop="30dp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#c3ffffff"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COMPARE CAMERA"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:onClick="compare_bikes"
+                android:layout_marginTop="30dp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#c3ffffff"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COMPARE WATCHES"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:onClick="compare_bikes"
+                android:layout_marginTop="30dp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#c3ffffff"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FEEDBACK"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#c3ffffff"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOGUT"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#c3ffffff"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

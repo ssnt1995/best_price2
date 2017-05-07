@@ -89,7 +89,7 @@ public class siggnup extends AppCompatActivity {
         }
 
         System.out.println(signj);
-        JsonObjectRequest signreq = new JsonObjectRequest("http://192.168.0.30/signup.php", signj, new Response.Listener<JSONObject>() {
+        JsonObjectRequest signreq = new JsonObjectRequest("http://"+IpAddress.ip+"/signup.php", signj, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response)
 

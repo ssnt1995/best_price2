@@ -44,11 +44,11 @@ public class product_adapter extends RecyclerView.Adapter<product_view_holder>
         try {
             final JSONObject job = jsarr.getJSONObject(position);
 
-            holder.product_name.setText(job.getString("Name"));
+            holder.product_name.setText(job.getString("Product_Name"));
             holder.product_image.setImageBitmap(StringToBitMap(job.getString("image")));
 
-            holder.product_price.setText(job.getString("price"));
-            holder.product_description.setText(job.getString("Description"));
+            holder.product_price.setText(job.getString("Price"));
+            holder.product_description.setText(job.getString("Product_Details"));
 
         } catch (JSONException e) {
             e.printStackTrace();

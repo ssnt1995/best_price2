@@ -24,7 +24,11 @@
         <activity android:name=".show_products" />
         <activity android:name=".Best_price" />
         <activity android:name=".admin_home" />
-        <activity android:name=".admin_homepage"></activity>
+        <activity android:name=".admin_homepage" />
+        <activity android:name=".Compare_mobiles" />
+        <activity android:name=".Compare_bikes" />
+        <activity android:name=".Mobile_comparison" />
+        <activity android:name=".Compare_car"></activity>
     </application>
 
 </manifest>

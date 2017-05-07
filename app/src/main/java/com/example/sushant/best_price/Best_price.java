@@ -65,7 +65,7 @@ public class Best_price extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        JsonObjectRequest jobjreq = new JsonObjectRequest("http://192.168.0.25/login.php", jobj, new Response.Listener<JSONObject>() {
+        JsonObjectRequest jobjreq = new JsonObjectRequest("http://"+IpAddress.ip+"/login.php", jobj, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
 

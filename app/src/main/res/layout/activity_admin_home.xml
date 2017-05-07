@@ -30,7 +30,7 @@
     <view
         android:layout_width="match_parent"
         android:layout_margin="30dp"
-        android:layout_below="@id/admin_username"
+        android:layout_below="@+id/admin_username"
         android:layout_height="2dp"
         android:id="@+id/adminuserview"
         android:background="@drawable/stroke"></view>
@@ -41,7 +41,7 @@
         android:layout_height="wrap_content"
         android:paddingLeft="30dp"
         android:textColor="#fff"
-        android:layout_below="@id/adminuserview"
+        android:layout_below="@+id/adminuserview"
         android:text="password"
         android:id="@+id/adminpasword"
         android:textSize="20dp"/>
@@ -51,7 +51,7 @@
         android:layout_height="50dp"
 
         android:textColor="#fff"
-        android:layout_below="@id/adminpasword"
+        android:layout_below="@+id/adminpasword"
         android:id="@+id/admin_password"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
@@ -60,7 +60,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/admin_password"
+        android:layout_below="@+id/admin_password"
         android:layout_centerHorizontal="true"
         android:text="LOGIN"
         android:layout_marginTop="10dp"

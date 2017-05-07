@@ -1,8 +1,10 @@
 package com.example.sushant.best_price;
 
 import android.content.Intent;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 
@@ -11,6 +13,7 @@ import static android.R.attr.start;
 public class home_page extends AppCompatActivity {
 
 
+    DrawerLayout drawer_home ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +21,7 @@ public class home_page extends AppCompatActivity {
         setContentView(R.layout.activity_home_page);
 
 
+        drawer_home = (DrawerLayout) findViewById(R.id.drawer_lay);
 
     }
 
@@ -95,6 +99,22 @@ public class home_page extends AppCompatActivity {
     }
 
 
+    public void show_more(View view) {
 
+        drawer_home.openDrawer(Gravity.LEFT);
 
+    }
+
+    public void compare_mobile(View view) {
+
+        Intent i = new Intent(home_page.this , Compare_mobiles.class);
+
+        startActivity(i);
+    }
+
+    public void compare_bikes(View view) {
+        Intent i = new Intent(home_page.this , Compare_bikes.class);
+
+        startActivity(i);
+    }
 }
